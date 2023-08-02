@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="flex flex-col">
+      <div class="w-full flex parallax-1">
+        <div
+          class="flex flex-col gap-[20px] md:flex-row w-full py-2 px-12 sm:px-24"
+        >
+          <div class="w-full md:w-2/4 h-fit">
+            <img
+              class="h-[185px] block z-10 mx-auto md:m-0"
+              src="./img/logo-2.jpg"
+            />
+          </div>
+          <div class="w-full md:w-2/4 h-fit py-4">
+            <a
+              href="contact"
+              class="w-fit text-center block bg-[#204b57] px-10 py-4 pb-6 text-white text-xl sm:text-4xl font-bold rounded-[22px] mx-auto hover:brightness-95 hover:translate-y-0.5"
+              >Request An Estimate</a
+            >
+            <a href="Tel: 123-456-7890">
+              <h2
+                class="text-black text-4xl leading-none text-center tracking-tight hover:font-medium mt-4"
+              >
+                Call us today <br />
+                for an estimate <br />
+                (904) 733-7665
+              </h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav id="nav" class="bg-[#204b57] hover:bg-[#20414a]">
+        <div class="flex">
+          <div class="w-8 h-8" id="open">
+            <button
+              class="bg-transparent flex flex-col justify-center items-center gap-[0.45rem] w-full h-full"
+            >
+              <div
+                class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+              ></div>
+              <div
+                class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+              ></div>
+              <div
+                class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+              ></div>
+            </button>
+          </div>
+          <div class="flex justify-center items-center px-4 text-white">
+            <p class="text-2xl">Show Menu</p>
+          </div>
+        </div>
+        <ul
+          id="links"
+          class="hidden text-white flex flex-col justify-center items-center gap-4 py-8 text-xl"
+        >
+          <li>Home</li>
+          <li>About</li>
+          <li>contact Us</li>
+          <li>Residential Pools</li>
+          <li>Comercial Pools</li>
+          <li>Photo Gallery</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="w-full parallax-2">
+      <div class="bg-white bg-opacity-80">
+        <div class="backdrop-blur-sm max-w-7xl h-fit m-auto px-10 py-8">
+          <img
+            class="rounded-lg w-full h-full max-h-[800px]"
+            src="https://source.unsplash.com/random/house-pool-yard"
+            alt=""
+          />
+          <div class="py-4">
+            <h1 class="text-2xl font-bold w-96 md:w-2/4 mt-4">Parry Pools | Respected, Trained, Quality Residential and Commercial Swimming Pool Repair and New Construction!</h1>
+            <p>For over 35 years Parry Pools, located in Jacksonville, Florida, has been a leader in residential and commercial swimming pool new construction and swimming pool repair and maintenance. With our cutting edge technology and advanced design programs, we are able to turn any greenspace into a tropical paradise.</p>
+            <p>Our services are not limited to new construction. Our team can transform your old and outdated pool, equipment and deck into a more energy efficient and modern version of the pool you originally fell in love with.</p>
+            <p>If keeping your pool clean and properly balanced has become more than you can handle, our pool maintenance team can keep your pool water balanced and operating at the safest levels.</p>
+            <h2 class="text-2xl font-bold w-96 md:w-2/4 mt-4">Realtor Swimming Pool Inspector </h2>
+            <p>Are you a Realtor in need of an expert to inspect and provide recommendations for swimming pools on properties that you wish to sell at current listings? We are your swimming pool inspection and repair experts. Never be disappointed on getting your listing prices and selling quickly. We can inspect, advise, and provide assistance with any commercial or residential swimming pool property.</p>
+            <p>Call us today, or email us with your questions.</p>
+            <h2 class="text-2xl font-bold w-96 md:w-2/4 mt-4">Company Profile</h2>
+            <p>Parry Pools was founded in 1975 by William E. Parry, Jr. With the help of his family, Mr. Parry built Parry Pools into the area's most well respected service company. In 1989, William Parry, III, joined forces with his dad, and started the commercial and residential construction division. For the past 35+ years, Parry's reputation has remained strong and has expanded throughout Florida and the surrounding areas.</p>
+            <p>Some of the North Florida businesses that we have done quality work for are:</p>
+            <p><a href="http://www.haskell.com/en/">The Haskell Company</a></p>
+            <p>Regional Developers</p>
+            <p>W.G. Pitts Company</p>
+            <p>Wood Development</p>
+            <p><a href="http://www.angelogroup.com/">Angelo Group</a></p>
+            <p><a href="http://www.stellar.net/">The Stellar Group</a></p>
+            <p><a href="http://haywardconstructionco.com/">Hayward Construction</a></p>
+            <p><a href="http://www.wetengineering.net/">Wet Engineering</a></p>
+            <p>North American Aquatic Design</p>
+            <p>Aquatic Design &amp; Engineering</p>
+            <p>Terrence Lambert</p>
+            <p><a href="http://www.aquadynamics.biz/">Aqua Dynamics Group</a></p>
+            <p><a href="http://www.landsouth.com/">Landsouth</a></p>
+            <p><a href="http://www.landmargroup.com/">LandMar Group</a></p>
+            <p>In addition to the businesses listed, we have a long list of Jacksonville families that enjoy their "Parry Pool" everyday.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const nav = document.getElementById("nav");
+    const links = document.getElementById("links");
+    const menuBtn = document.getElementById("open");
+    nav.addEventListener("click", () => {
+      menuBtn.classList.toggle("open");
+      links.classList.toggle("hidden");
+    });
+  </script>
+</html>
+
+<!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo quam quae debitis nesciunt eum, velit repudiandae explicabo illo excepturi temporibus a corrupti quod repellat, quibusdam minima aut suscipit provident porro id veniam? Natus tempora odit eum rerum a quasi laboriosam dolor ad in voluptatibus unde beatae ut, non dolore minima pariatur! Provident quae inventore laborum est, velit hic, voluptatem quasi deserunt accusamus harum nihil iusto dicta corrupti officia numquam unde officiis similique esse odio corporis sapiente laudantium quaerat quo. Libero, dicta ad possimus atque eligendi expedita laudantium eius quam! Nisi reiciendis autem sit ullam sunt, tenetur at rerum ipsam aut, itaque vero laboriosam rem, inventore ratione! Tempora, doloribus incidunt voluptatibus quia magni odit laudantium alias corrupti earum, nesciunt voluptatum, sed possimus inventore reiciendis minima ratione maiores nemo eaque iste cum sunt fuga. Numquam natus eius a! Aspernatur, animi hic! Obcaecati asperiores voluptatibus ad inventore suscipit sequi praesentium, doloribus nam vitae quia placeat, perferendis voluptatum. Deleniti autem quo nisi deserunt assumenda illo tempora sit tempore. Neque cupiditate dolorem odio quas dicta, obcaecati cumque similique at aliquam eum sapiente nesciunt eos qui quaerat animi maxime consequatur. Labore illum tempora sit dicta itaque expedita minima recusandae. Officia reprehenderit explicabo esse earum aut non veritatis necessitatibus accusamus omnis ipsum ducimus, doloribus eum consequuntur? Nam vel deserunt ipsa molestiae veniam asperiores praesentium esse nesciunt rerum excepturi, doloremque illum temporibus maxime quibusdam fugit officiis hic eligendi delectus nisi tenetur? Illum corrupti laboriosam laborum sequi placeat? Amet neque sit ab minus? Dolore commodi repellat voluptatum. A, accusantium laborum provident ratione assumenda hic dignissimos. Ex voluptatem, fugit quisquam delectus molestias sit amet, architecto, necessitatibus hic eligendi ipsam quo molestiae. Praesentium, nam optio excepturi sed totam dolor ipsa repellendus culpa doloribus. Vel officia deleniti magnam quis id minima natus cum hic! Repudiandae, itaque? Vel aliquam magnam excepturi aspernatur doloribus pariatur deserunt, officia fugiat accusamus est praesentium sapiente consequatur aliquid adipisci dolor blanditiis ullam placeat consectetur unde maiores facere. Inventore deserunt excepturi est tenetur libero. Voluptatum ex corrupti facere ut quibusdam quos quia, dicta laudantium illum saepe. Est error quam cumque porro illo qui quia, sed doloribus velit architecto voluptate iste sapiente voluptates eligendi tempora veniam eos quas consequatur maxime laboriosam explicabo distinctio! Accusantium nemo voluptate tempore velit. Veritatis culpa modi molestias, provident exercitationem, architecto quia earum reiciendis quasi voluptatibus recusandae deserunt, velit id animi necessitatibus quod eum tempora magni corrupti ab repellendus accusamus? Numquam, neque consectetur? Aut et ullam illum dolorum tempore soluta unde rem error explicabo nostrum, mollitia totam, ut obcaecati officiis debitis animi culpa atque exercitationem eveniet vitae fuga labore! Laboriosam quidem pariatur magni obcaecati consequuntur consectetur optio nesciunt velit praesentium ullam quam repellendus incidunt reiciendis, aperiam, veniam neque dolores quasi possimus minima voluptatem asperiores quisquam voluptatum! Reiciendis, explicabo. Quaerat, voluptate saepe. Accusamus fugit explicabo dolores quam impedit. Dolore, quidem. Eaque cum doloremque aut tempora perferendis placeat similique nobis nulla totam maiores labore consequuntur animi esse voluptatem dolore minima, accusamus repellat magni aperiam molestias quia nihil laboriosam libero. Minus earum vero pariatur consequuntur laborum? Reiciendis, laboriosam.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo quam quae debitis nesciunt eum, velit repudiandae explicabo illo excepturi temporibus a corrupti quod repellat, quibusdam minima aut suscipit provident porro id veniam? Natus tempora odit eum rerum a quasi laboriosam dolor ad in voluptatibus unde beatae ut, non dolore minima pariatur! Provident quae inventore laborum est, velit hic, voluptatem quasi deserunt accusamus harum nihil iusto dicta corrupti officia numquam unde officiis similique esse odio corporis sapiente laudantium quaerat quo. Libero, dicta ad possimus atque eligendi expedita laudantium eius quam! Nisi reiciendis autem sit ullam sunt, tenetur at rerum ipsam aut, itaque vero laboriosam rem, inventore ratione! Tempora, doloribus incidunt voluptatibus quia magni odit laudantium alias corrupti earum, nesciunt voluptatum, sed possimus inventore reiciendis minima ratione maiores nemo eaque iste cum sunt fuga. Numquam natus eius a! Aspernatur, animi hic! Obcaecati asperiores voluptatibus ad inventore suscipit sequi praesentium, doloribus nam vitae quia placeat, perferendis voluptatum. Deleniti autem quo nisi deserunt assumenda illo tempora sit tempore. Neque cupiditate dolorem odio quas dicta, obcaecati cumque similique at aliquam eum sapiente nesciunt eos qui quaerat animi maxime consequatur. Labore illum tempora sit dicta itaque expedita minima recusandae. Officia reprehenderit explicabo esse earum aut non veritatis necessitatibus accusamus omnis ipsum ducimus, doloribus eum consequuntur? Nam vel deserunt ipsa molestiae veniam asperiores praesentium esse nesciunt rerum excepturi, doloremque illum temporibus maxime quibusdam fugit officiis hic eligendi delectus nisi tenetur? Illum corrupti laboriosam laborum sequi placeat? Amet neque sit ab minus? Dolore commodi repellat voluptatum. A, accusantium laborum provident ratione assumenda hic dignissimos. Ex voluptatem, fugit quisquam delectus molestias sit amet, architecto, necessitatibus hic eligendi ipsam quo molestiae. Praesentium, nam optio excepturi sed totam dolor ipsa repellendus culpa doloribus. Vel officia deleniti magnam quis id minima natus cum hic! Repudiandae, itaque? Vel aliquam magnam excepturi aspernatur doloribus pariatur deserunt, officia fugiat accusamus est praesentium sapiente consequatur aliquid adipisci dolor blanditiis ullam placeat consectetur unde maiores facere. Inventore deserunt excepturi est tenetur libero. Voluptatum ex corrupti facere ut quibusdam quos quia, dicta laudantium illum saepe. Est error quam cumque porro illo qui quia, sed doloribus velit architecto voluptate iste sapiente voluptates eligendi tempora veniam eos quas consequatur maxime laboriosam explicabo distinctio! Accusantium nemo voluptate tempore velit. Veritatis culpa modi molestias, provident exercitationem, architecto quia earum reiciendis quasi voluptatibus recusandae deserunt, velit id animi necessitatibus quod eum tempora magni corrupti ab repellendus accusamus? Numquam, neque consectetur? Aut et ullam illum dolorum tempore soluta unde rem error explicabo nostrum, mollitia totam, ut obcaecati officiis debitis animi culpa atque exercitationem eveniet vitae fuga labore! Laboriosam quidem pariatur magni obcaecati consequuntur consectetur optio nesciunt velit praesentium ullam quam repellendus incidunt reiciendis, aperiam, veniam neque dolores quasi possimus minima voluptatem asperiores quisquam voluptatum! Reiciendis, explicabo. Quaerat, voluptate saepe. Accusamus fugit explicabo dolores quam impedit. Dolore, quidem. Eaque cum doloremque aut tempora perferendis placeat similique nobis nulla totam maiores labore consequuntur animi esse voluptatem dolore minima, accusamus repellat magni aperiam molestias quia nihil laboriosam libero. Minus earum vero pariatur consequuntur laborum? Reiciendis, laboriosam.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo quam quae debitis nesciunt eum, velit repudiandae explicabo illo excepturi temporibus a corrupti quod repellat, quibusdam minima aut suscipit provident porro id veniam? Natus tempora odit eum rerum a quasi laboriosam dolor ad in voluptatibus unde beatae ut, non dolore minima pariatur! Provident quae inventore laborum est, velit hic, voluptatem quasi deserunt accusamus harum nihil iusto dicta corrupti officia numquam unde officiis similique esse odio corporis sapiente laudantium quaerat quo. Libero, dicta ad possimus atque eligendi expedita laudantium eius quam! Nisi reiciendis autem sit ullam sunt, tenetur at rerum ipsam aut, itaque vero laboriosam rem, inventore ratione! Tempora, doloribus incidunt voluptatibus quia magni odit laudantium alias corrupti earum, nesciunt voluptatum, sed possimus inventore reiciendis minima ratione maiores nemo eaque iste cum sunt fuga. Numquam natus eius a! Aspernatur, animi hic! Obcaecati asperiores voluptatibus ad inventore suscipit sequi praesentium, doloribus nam vitae quia placeat, perferendis voluptatum. Deleniti autem quo nisi deserunt assumenda illo tempora sit tempore. Neque cupiditate dolorem odio quas dicta, obcaecati cumque similique at aliquam eum sapiente nesciunt eos qui quaerat animi maxime consequatur. Labore illum tempora sit dicta itaque expedita minima recusandae. Officia reprehenderit explicabo esse earum aut non veritatis necessitatibus accusamus omnis ipsum ducimus, doloribus eum consequuntur? Nam vel deserunt ipsa molestiae veniam asperiores praesentium esse nesciunt rerum excepturi, doloremque illum temporibus maxime quibusdam fugit officiis hic eligendi delectus nisi tenetur? Illum corrupti laboriosam laborum sequi placeat? Amet neque sit ab minus? Dolore commodi repellat voluptatum. A, accusantium laborum provident ratione assumenda hic dignissimos. Ex voluptatem, fugit quisquam delectus molestias sit amet, architecto, necessitatibus hic eligendi ipsam quo molestiae. Praesentium, nam optio excepturi sed totam dolor ipsa repellendus culpa doloribus. Vel officia deleniti magnam quis id minima natus cum hic! Repudiandae, itaque? Vel aliquam magnam excepturi aspernatur doloribus pariatur deserunt, officia fugiat accusamus est praesentium sapiente consequatur aliquid adipisci dolor blanditiis ullam placeat consectetur unde maiores facere. Inventore deserunt excepturi est tenetur libero. Voluptatum ex corrupti facere ut quibusdam quos quia, dicta laudantium illum saepe. Est error quam cumque porro illo qui quia, sed doloribus velit architecto voluptate iste sapiente voluptates eligendi tempora veniam eos quas consequatur maxime laboriosam explicabo distinctio! Accusantium nemo voluptate tempore velit. Veritatis culpa modi molestias, provident exercitationem, architecto quia earum reiciendis quasi voluptatibus recusandae deserunt, velit id animi necessitatibus quod eum tempora magni corrupti ab repellendus accusamus? Numquam, neque consectetur? Aut et ullam illum dolorum tempore soluta unde rem error explicabo nostrum, mollitia totam, ut obcaecati officiis debitis animi culpa atque exercitationem eveniet vitae fuga labore! Laboriosam quidem pariatur magni obcaecati consequuntur consectetur optio nesciunt velit praesentium ullam quam repellendus incidunt reiciendis, aperiam, veniam neque dolores quasi possimus minima voluptatem asperiores quisquam voluptatum! Reiciendis, explicabo. Quaerat, voluptate saepe. Accusamus fugit explicabo dolores quam impedit. Dolore, quidem. Eaque cum doloremque aut tempora perferendis placeat similique nobis nulla totam maiores labore consequuntur animi esse voluptatem dolore minima, accusamus repellat magni aperiam molestias quia nihil laboriosam libero. Minus earum vero pariatur consequuntur laborum? Reiciendis, laboriosam.</p>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quo quam quae debitis nesciunt eum, velit repudiandae explicabo illo excepturi temporibus a corrupti quod repellat, quibusdam minima aut suscipit provident porro id veniam? Natus tempora odit eum rerum a quasi laboriosam dolor ad in voluptatibus unde beatae ut, non dolore minima pariatur! Provident quae inventore laborum est, velit hic, voluptatem quasi deserunt accusamus harum nihil iusto dicta corrupti officia numquam unde officiis similique esse odio corporis sapiente laudantium quaerat quo. Libero, dicta ad possimus atque eligendi expedita laudantium eius quam! Nisi reiciendis autem sit ullam sunt, tenetur at rerum ipsam aut, itaque vero laboriosam rem, inventore ratione! Tempora, doloribus incidunt voluptatibus quia magni odit laudantium alias corrupti earum, nesciunt voluptatum, sed possimus inventore reiciendis minima ratione maiores nemo eaque iste cum sunt fuga. Numquam natus eius a! Aspernatur, animi hic! Obcaecati asperiores voluptatibus ad inventore suscipit sequi praesentium, doloribus nam vitae quia placeat, perferendis voluptatum. Deleniti autem quo nisi deserunt assumenda illo tempora sit tempore. Neque cupiditate dolorem odio quas dicta, obcaecati cumque similique at aliquam eum sapiente nesciunt eos qui quaerat animi maxime consequatur. Labore illum tempora sit dicta itaque expedita minima recusandae. Officia reprehenderit explicabo esse earum aut non veritatis necessitatibus accusamus omnis ipsum ducimus, doloribus eum consequuntur? Nam vel deserunt ipsa molestiae veniam asperiores praesentium esse nesciunt rerum excepturi, doloremque illum temporibus maxime quibusdam fugit officiis hic eligendi delectus nisi tenetur? Illum corrupti laboriosam laborum sequi placeat? Amet neque sit ab minus? Dolore commodi repellat voluptatum. A, accusantium laborum provident ratione assumenda hic dignissimos. Ex voluptatem, fugit quisquam delectus molestias sit amet, architecto, necessitatibus hic eligendi ipsam quo molestiae. Praesentium, nam optio excepturi sed totam dolor ipsa repellendus culpa doloribus. Vel officia deleniti magnam quis id minima natus cum hic! Repudiandae, itaque? Vel aliquam magnam excepturi aspernatur doloribus pariatur deserunt, officia fugiat accusamus est praesentium sapiente consequatur aliquid adipisci dolor blanditiis ullam placeat consectetur unde maiores facere. Inventore deserunt excepturi est tenetur libero. Voluptatum ex corrupti facere ut quibusdam quos quia, dicta laudantium illum saepe. Est error quam cumque porro illo qui quia, sed doloribus velit architecto voluptate iste sapiente voluptates eligendi tempora veniam eos quas consequatur maxime laboriosam explicabo distinctio! Accusantium nemo voluptate tempore velit. Veritatis culpa modi molestias, provident exercitationem, architecto quia earum reiciendis quasi voluptatibus recusandae deserunt, velit id animi necessitatibus quod eum tempora magni corrupti ab repellendus accusamus? Numquam, neque consectetur? Aut et ullam illum dolorum tempore soluta unde rem error explicabo nostrum, mollitia totam, ut obcaecati officiis debitis animi culpa atque exercitationem eveniet vitae fuga labore! Laboriosam quidem pariatur magni obcaecati consequuntur consectetur optio nesciunt velit praesentium ullam quam repellendus incidunt reiciendis, aperiam, veniam neque dolores quasi possimus minima voluptatem asperiores quisquam voluptatum! Reiciendis, explicabo. Quaerat, voluptate saepe. Accusamus fugit explicabo dolores quam impedit. Dolore, quidem. Eaque cum doloremque aut tempora perferendis placeat similique nobis nulla totam maiores labore consequuntur animi esse voluptatem dolore minima, accusamus repellat magni aperiam molestias quia nihil laboriosam libero. Minus earum vero pariatur consequuntur laborum? Reiciendis, laboriosam.</p> -->

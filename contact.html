@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex flex-col">
+        <div class="w-full flex parallax-1">
+          <div
+            class="flex flex-col gap-[20px] md:flex-row w-full py-2 px-12 sm:px-24"
+          >
+            <div class="w-full md:w-2/4 h-fit">
+              <img
+                class="h-[185px] block z-10 mx-auto md:m-0"
+                src="./img/logo-2.jpg"
+              />
+            </div>
+            <div class="w-full md:w-2/4 h-fit py-4">
+              <a
+                href="contact"
+                class="w-fit text-center block bg-[#204b57] px-10 py-4 pb-6 text-white text-xl sm:text-4xl font-bold rounded-[22px] mx-auto hover:brightness-95 hover:translate-y-0.5"
+                >Request An Estimate</a
+              >
+              <a href="Tel: 123-456-7890">
+                <h2
+                  class="text-black text-4xl leading-none text-center tracking-tight hover:font-medium mt-4"
+                >
+                  Call us today <br />
+                  for an estimate <br />
+                  (904) 733-7665
+                </h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <nav id="nav" class="bg-[#204b57] hover:bg-[#20414a]">
+          <div class="flex">
+            <div class="w-8 h-8" id="open">
+              <button
+                class="bg-transparent flex flex-col justify-center items-center gap-[0.45rem] w-full h-full"
+              >
+                <div
+                  class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+                ></div>
+                <div
+                  class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+                ></div>
+                <div
+                  class="bg-white h-[4px] w-[100%] rounded-md transition-all origin-right"
+                ></div>
+              </button>
+            </div>
+            <div class="flex justify-center items-center px-4 text-white">
+              <p class="text-2xl">Show Menu</p>
+            </div>
+          </div>
+          <ul
+            id="links"
+            class="hidden text-white flex flex-col justify-center items-center gap-4 py-8 text-xl"
+          >
+            <li>Home</li>
+            <li>About</li>
+            <li>contact Us</li>
+            <li>Residential Pools</li>
+            <li>Comercial Pools</li>
+            <li>Photo Gallery</li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="w-full parallax-2">
+        <div class="bg-white bg-opacity-80 max-w-6xl mx-auto">
+          <div class="backdrop-blur-sm h-fit m-auto px-10 py-8">
+            <!-- <img
+              class="rounded-lg w-full h-full max-h-[800px]"
+              src="https://source.unsplash.com/random/house-pool-yard"
+              alt=""
+            /> -->
+            <div class="py-4">
+              <h3>Mailing Address</h3>
+              <p>Parry Pools, Inc.<br />4571 St Augustine Road<br />Jacksonville, FL 32207</p>
+              <h3>Contact List:</h3>
+              <p>Company Phone Number: (904) 733-7665<br />Company Fax Number: (904) 733-7346<br />Billy Parry, Owner - President:<br />Lynne Parry, Office Manager:</p>
+              <p>Please complete the form below to request information or to send your comments. We look forward to assisting you obtain the best in design and optimization possible.</p>
+            </div>
+            <div class="w-2/4">
+                <form class="flex flex-col gap-5">
+                    <input class="
+                     ring-gray-300 ring ring-1 px-4 py-2 text-black font-medium text-lg placeholder:text-black"  type="text" placeholder="your name">
+                    <input class="
+                     ring-gray-300 ring ring-1 px-4 py-2 text-black font-medium text-lg placeholder:text-black"  type="text" placeholder="your e-mail">
+                    <input class="
+                     ring-gray-300 ring ring-1 px-4 py-2 text-black font-medium text-lg placeholder:text-black"  type="text" placeholder="your phone number">
+                    <input class="
+                     ring-gray-300 ring ring-1 px-4 py-2 text-black font-medium text-lg placeholder:text-black"  type="text" placeholder="your address">
+                    <input class="
+                     ring-gray-300 ring ring-1 px-4 py-2 text-black font-medium text-lg placeholder:text-black"  type="text" placeholder="your zip-code">
+                     <select class="ring-gray-300 ring ring-1  px-4 py-2 font-medium text-lg w-2/4" name="" id="">
+                         <option value="Commercial Pool Project">Commercial Pool Project</option>
+                         <option value="Pool Maintenance">Pool Maintenance</option>
+                         <option value="Pool Reconstruction">Pool Reconstruction</option>
+                         <option value="Residential Pool">Residential Pool</option>
+                         <option value="other">Other</option>
+                     </select>
+                     <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+                </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
+    
+</body>
+</html>

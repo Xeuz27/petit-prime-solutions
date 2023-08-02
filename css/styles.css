@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.parallax-1 {
+  background-image: url("../img/parallax-1.jpg");
+
+  /* min-height: 300px; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* backdrop-filter: blur(4px) */
+}
+.parallax-2 {
+  background-image: url("../img/parallax-2.jpg");
+
+  /* min-height: fit-content; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* backdrop-filter: blur(4px) */
+}
+#open.open div:first-child {
+  transform: translateX(-4px) translateY(1px) rotate(-43deg);;
+}
+#open.open div:nth-child(2) {
+  opacity: 0;
+}
+#open.open div:nth-child(3) {
+  transform:translateX(-4px) translateY(0px) rotate(43deg);
+}
+a {
+  text-decoration: underline 1px black !important;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 20px !important;
+  font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
